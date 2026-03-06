@@ -12,7 +12,7 @@ API_KEY_GEMINI = "AIzaSyBkNlbJVUnYmnN0qEke5JKpcvzlYe3VTuA"
 # Configurar Gemini
 try:
     genai.configure(api_key=API_KEY_GEMINI)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
     NAVY_ACTIVO = True
 except:
     st.error("⚠️ Error: Falta la API Key de Gemini.")
