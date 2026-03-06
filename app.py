@@ -7,8 +7,7 @@ st.set_page_config(page_title="NEXO System", page_icon="⬡", layout="wide")
 
 # 1. PEGA AQUÍ TUS CREDENCIALES (Cámbialo entre las comillas)
 URL_CSV_CONTENIDO = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTeGoHOruoyf69vEMKbnLVN0bo7bVxUKrmNW3HYYYL3-tZEeWBayt6Z9v2S5d9If0UYQKg9woQS8ISW/pub?gid=1267612868&single=true&output=csv"
-API_KEY_GEMINI = "AIzaSyBkNlbJVUnYmnN0qEke5JKpcvzlYe3VTuA"
-
+API_KEY_GEMINI = st.secrets["GEMINI_API_KEY"]
 # Configurar Gemini
 try:
     genai.configure(api_key=API_KEY_GEMINI)
